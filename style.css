@@ -1,0 +1,198 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #556B2F;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px;
+    max-width: 1000px;
+    width: 100%;
+}
+
+.block {
+    box-sizing: border-box;
+    padding: 10px;
+    border: 1px solid #333;
+    border-radius: 15px;
+    margin-bottom: 20px;
+}
+
+.gallows {
+    width: 250px;
+    height: 400px;
+    background-color: #fff;
+    position: relative;
+}
+
+.gallows__base {
+    width: 80%;
+    height: 20px;
+    background-color: #333;
+    position: absolute;
+    bottom: 0;
+}
+
+.gallows__post,
+.gallows__partition,
+.gallows__rope,
+.gallows__beam {
+    width: 20px;
+    height: 100px;
+    background-color: #333;
+    position: absolute;
+}
+
+.gallows__post {
+    top: 0;
+    left: 40px;
+    height: 380px;
+}
+
+.gallows__beam {
+    top: -50px;
+    left: 95px;
+    transform: rotate(-90deg);
+    height: 170px;
+}
+
+.gallows__rope {
+    width: 15px;
+    height: 50px;
+    position: absolute;
+    top: 25px;
+    left: 140px;
+}
+
+.gallows__partition{
+    width: 15px;
+    height: 90px;
+    position: absolute;
+    transform: rotate(45deg);
+    top: 25px;
+    left: 70px;
+}
+
+.gallows__head,
+.gallows__body,
+.gallows__left-arm,
+.gallows__right-arm,
+.gallows__left-leg,
+.gallows__right-leg {
+    width: 100px;
+    height: 10px;
+    background-color: #909090;
+    position: absolute;
+    display: none;
+}
+
+.gallows__head {
+    width: 50px;
+    height: 50px;
+    top: 70px;
+    left: 110px;
+    border-radius: 50%;
+    border: 10px solid #909090;
+    background-color: transparent;
+}
+
+.gallows__body {
+    transform: rotate(90deg);
+    top: 180px;
+    left: 96px;
+}
+
+.gallows__left-arm,
+.gallows__right-arm,
+.gallows__left-leg,
+.gallows__right-leg {
+    top: 120px;
+}
+
+.gallows__left-arm {
+    transform: rotate(-45deg);
+    left: 60px;
+    top: 170px;
+}
+
+.gallows__right-arm {
+    transform: rotate(45deg);
+    left: 130px;
+    top: 166px;
+}
+
+.gallows__left-leg {
+    transform: rotate(-45deg);
+    left: 60px;
+    top: 260px;
+}
+
+.gallows__right-leg {
+    transform: rotate(45deg);
+    left: 130px;
+    top: 260px;
+}
+
+.quiz {
+    width: 60%;
+    background-color: #fff;
+}
+
+.quiz__question,
+.quiz__word,
+.quiz__incorrect {
+    margin-bottom: 10px;
+    font-size: 25px;
+}
+
+.quiz__keyboard {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+}
+
+.keyboard__key.guessed {
+    background-color: #555; /* Change to the desired darker color */
+    color: #fff; /* Change to the desired text color */
+}
+
+button {
+    padding: 10px;
+    margin: 5px;
+    font-size: 25px;
+    cursor: pointer;
+    background-color: #556B2F;
+    color: #fff;
+    border-radius: 5px;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    justify-content: center;
+    align-items: center;
+}
+
+.modal__content {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    font-size: 25px;
+}
+
+.modal__play-again {
+    margin-top: 10px;
+    border-radius: 5px;
+}

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hangman Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="gallows block">
+            <div class="gallows__base"></div>
+            <div class="gallows__post"></div>
+            <div class="gallows__beam"></div>
+            <div class="gallows__rope"></div>
+            <div class="gallows__partition"></div>
+            <div class="gallows__head"></div>
+            <div class="gallows__body"></div>
+            <div class="gallows__left-arm"></div>
+            <div class="gallows__right-arm"></div>
+            <div class="gallows__left-leg"></div>
+            <div class="gallows__right-leg"></div>
+            <!-- <div class="game-title">Hangman Game</div> -->
+        </div>
+        <div class="quiz block">
+            <p class="quiz__question" id="question">Question: What is the capital of France?</p>
+            <p class="quiz__word" id="word">Word: _ _ _ _ _ _ _</p>
+            <p class="quiz__incorrect" id="incorrect">Incorrect Guesses: 0/6</p>
+            <div class="keyboard quiz__keyboard" id="keyboard"></div>
+        </div>
+        
+    </div>
+    <div id="modal" class="modal block">
+        <div class="modal__content">
+            <p class="modal__message" id="modal-message"></p>
+            <p class="modal__word" id="modal-word"></p>
+            <button class="modal__play-again" id="play-again">Play Again</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
